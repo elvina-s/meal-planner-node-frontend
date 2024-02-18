@@ -1,14 +1,14 @@
 import axios from "axios";
 
 const getAllMeals = (setMeal) => {
-    axios.get(`https://render.com/docs/web-services#port-detection`)
+    axios.get(`https://meal-planner-node.onrender.com`)
     .then(({data}) => {console.log(data)
         setMeal(data)
     })
 }
 
 const addMeal = (title, setTitle, setMeal) => {
-    axios.post(`https://render.com/docs/web-services#port-detection/saveMeals`, { title })
+    axios.post(`https://meal-planner-node.onrender.com/saveMeals`, { title })
     .then((data) => {
         console.log(data)
         setTitle("")
@@ -17,7 +17,7 @@ const addMeal = (title, setTitle, setMeal) => {
 }
 
 const editMeal = (mealId, title, setTitle, setMeal, setEditing) => {
-    axios.post(`https://render.com/docs/web-services#port-detection/editMeal`, { _id: mealId, title })
+    axios.post(`https://meal-planner-node.onrender.com/editMeal`, { _id: mealId, title })
     .then((data) => {
         console.log(data)
         setTitle("")
@@ -27,7 +27,7 @@ const editMeal = (mealId, title, setTitle, setMeal, setEditing) => {
 }
 
 const deleteMeal = (_id, setMeal) => {
-    axios.post(`https://render.com/docs/web-services#port-detection/deleteMeal`, { _id })
+    axios.post(`https://meal-planner-node.onrender.com/deleteMeal`, { _id })
     .then((data) => {
         console.log(data)
         getAllMeals(setMeal)
