@@ -14,6 +14,7 @@ body {
   h1 {
   font-family: "Inter", sans-serif;
   text-align: center;
+  font-weight: lighter;
   }
   
   input {
@@ -22,10 +23,11 @@ body {
   border: 1.5px solid #313133;
   border-radius: 10px;
   color: #313133;
-  font-size: 26px;
+  font-size: 24px;
   background: rgba(49, 49, 51, 0);
   padding: 20px;
   font-family: "Inter", sans-serif;
+  font-weight: lighter;
   margin-bottom: 20px;
   outline: none;
   }
@@ -69,9 +71,10 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   width: 400px;
-  font-size: 26px;
+  font-size: 24px;
   padding: 10px 10px;
   border-bottom: 1.5px solid #313133;
+  font-weight: lighter;
   }
 
 .buttons {
