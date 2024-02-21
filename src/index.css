@@ -8,14 +8,14 @@ body {
 
   .App {
     background-color: #ebffffe8;
-    padding: 30px;
+    padding: 50px;
     border-radius: 10px;
   }
   
   h1 {
   font-family: "Inter", sans-serif;
   text-align: center;
-  font-weight: lighter;
+  font-weight: 600;
   margin: 0px;
   }
   
@@ -29,7 +29,7 @@ body {
   background: rgba(49, 49, 51, 0);
   padding: 20px;
   font-family: "Inter", sans-serif;
-  font-weight: lighter;
+  font-weight: 400;
   margin: 20px 0px;
   outline: none;
   }
@@ -76,7 +76,7 @@ body {
   font-size: 24px;
   padding: 10px 10px;
   border-bottom: 1.5px solid #313133;
-  font-weight: lighter;
+  font-weight: 400;
   }
 
 .buttons {
