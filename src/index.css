@@ -5,36 +5,100 @@ body {
   display: grid;
   place-items: center;
   }
+
+  .App {
+    background-color: #ebffffe8;
+    padding: 30px;
+  }
   
   h1 {
   font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
   }
   
   input {
   display: block;
-  width: 100%;
-  border: none;
-  color: white;
-  font-size: 20px;
-  background: #313133;
+  width: 400px;
+  border: 1.5px solid #313133;
+  border-radius: 10px;
+  color: #313133;
+  font-size: 26px;
+  background: rgba(49, 49, 51, 0);
   padding: 20px;
   font-family: 'Gloria Hallelujah', cursive;
   margin-bottom: 20px;
+  outline: none;
+  }
+
+  input::placeholder {
+    color: #313133;
   }
   
-  button {
-  padding: 20px 50px 20px 70px;
-  background-color: #024d3d;
+  .addBtn {
+  background-color: #03765d;
+  border: none;
+  border-radius: 10px;
   color: white;
   font-size: 20px;
   cursor: pointer;
+  text-align: center;
+  padding: 15px 40px;
+  margin: 0px 0px 30px 0px;
+  }
+
+  .addBtn:hover {
+    background-color: #ffffff;
+    border: solid 2px #03765d;
+    color: #03765d;
+    padding: 13px 38px;
+  }
+
+  .Meals {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebffff;
+  }
+
+  .aMeal {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px 10px 0px;
   }
   
   p {
-  max-width: 100%;
-  background: beige;
-  margin-top: 20px;
+  margin: 0;
   font-family: 'Gloria Hallelujah', cursive;
-  width: 600px;
-  font-size: 20px;
+  width: 400px;
+  font-size: 26px;
+  padding: 10px 10px;
+  border-bottom: 1.5px solid #313133;
   }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 0px 0px 0px 20px;
+}
+
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin: 0;
+  background-color: #ebffffe8;
+  border-radius: 10px;
+  border: solid 2px #313133;
+  padding: 10px;
+}
+
+.second {
+  margin: 0px 0px 0px 15px;
+}
+
+.first:hover {
+  background-color: #03765d;
+} 
+
+.second:hover {
+  background-color: #ff4040e8;
+} 
