@@ -9,6 +9,7 @@ body {
   .App {
     background-color: #ebffffe8;
     padding: 30px;
+    border-radius: 10px;
   }
   
   h1 {
