@@ -7,7 +7,7 @@ Meal Planner is a web application, where a meal plan can be managed and stored o
 
 ## What is it made with?
 
-Node, React and MongoDB Atlas. The backend (Node) you can find in other repository: .
+Node, React and MongoDB Atlas. The backend (Node) you can find in other repository: https://github.com/elvina-s/meal-planner-node.git.
 
 ## Installation
 
