@@ -5,13 +5,13 @@ import { getAllMeals, addMeal, deleteMeal, editMeal } from './FetchMeals';
 
 
 function App() {
-  const [meal, setMeal] = useState([]);
+  const [meals, setMeals] = useState([]);
   const [title, setTitle] = useState("");
   const [editing, setEditing] = useState(false);
   const [mealId, setMealId] = useState("");
 
   useEffect(() => {
-    getAllMeals(setMeal)
+    getAllMeals(setMeals)
   }, [])
 
   const updatingInInput = (_id, title) => {
@@ -26,22 +26,23 @@ function App() {
 
       <input
       type="text"
-      placeholder="Add a meal"
+      placeholder="Enter a meal"
       value={title}
       onChange={(e) => setTitle(e.target.value)}
       />
 
       <button 
+      className='addBtn'
       disabled={!title}
       onClick=
-      {editing ? () => editMeal(mealId, title, setTitle, setMeal, setEditing) : () => addMeal(title, setTitle, setMeal)}>
+      {editing ? () => editMeal(mealId, title, setTitle, setMeals, setEditing) : () => addMeal(title, setTitle, setMeals)}>
       {editing ? "Edit" : "Add"}
       </button>
 
       {
-        meal.map((meal) => <Meals text={meal.title} key={meal._id} 
+        meals.map((meal) => <Meals text={meal.title} key={meal._id} 
         updatingInInput={() => updatingInInput(meal._id, meal.title)}
-        deleteMeal={() => deleteMeal(meal._id, setMeal)}
+        deleteMeal={() => deleteMeal(meal._id, setMeals)}
         />
       )}
     </div>
